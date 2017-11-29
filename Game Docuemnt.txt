@@ -1,0 +1,152 @@
+The Computer Science House on Randolph
+
+Scorched Earth 3D
+Tank vs Tank 
+
+Design Document
+Version 1.0
+October 17, 2017
+
+Written by 
+Christopher McMahon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+
+Scorched Earth 3D
+
+Design History
+	Version 1.0 
+
+Game Overview
+
+Feature Set
+
+The Game World
+
+The World Layout
+
+Game Characters
+
+User Interface
+
+Weapons
+
+Musical Scores and Sound Effects
+
+Single Player Game
+
+Multi-player Game
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Design History
+
+This section is a brief history of any changes that have been made to the game. These changes can include bug fixes, game balancing or updates that bring new content to the game. These updates usually start coming after the game has been released to the public so a wider audience can help with bug reporting and general thoughts about the game. This feedback is then taken into consideration from the developers of the game through game updates and patches.
+
+Version 1.0
+	- Initial release of the game
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Game Overview
+
+Philosophy
+
+The main reason for developing this game was to modernize an old classic game. Scorched Earth was for the 
+
+s to breath new life into an old classic game that was loved by many. Even though the physics of the original game have aged well, the graphics and overall look and feel of the game has not. The main goal of this game is to keep the underlying game mechanics of the original game while adding new and improved graphics and gameplay that compliment the original game.
+
+
+
+Feature Set
+
+
+Genre
+
+Target Audience
+
+Game Flow
+
+Look and Feel
+
+Project Scope
