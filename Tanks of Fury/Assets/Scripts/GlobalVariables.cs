@@ -10,7 +10,8 @@ public class GlobalVariables : MonoBehaviour {
 	public static int cannonMultiplier = 1000;
 	public static float speedAOE = 0.1f;
 	public static int fuelMultiplier = 5;
-
+	public static bool fireAI = false;
+	public static string mode;
 
 	//Ammo mods where players can change these values for themselves
 	public static int maxTravelDistance = 1000;

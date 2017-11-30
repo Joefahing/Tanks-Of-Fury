@@ -10,26 +10,20 @@ public class MovePlayer : MonoBehaviour {
 	public Camera playerCamera;
 	Vector3 cameraOffset;
 
-	void Start () {
-		cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
-	}
-
 	void Update () {
 		if (GlobalVariables.currentPlayerHasFiredCannon == false) {
 			if (GlobalVariables.currentPlayerMaxTravelDistance == false) {
-				
+				cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
 				//moving the player based on user input
 				if (Input.GetKey ("w")) {
 					//move object in the forward direction thats its facing
 					GlobalVariables.currentPlayerTank.transform.position += GlobalVariables.currentPlayerTank.transform.forward * GlobalVariables.moveSpeed * Time.deltaTime;
-					//playerCamera.transform.position = GlobalVariables.currentPlayerTank.transform.position + cameraOffset;
 					updateFuelConsumption ();
 				}
 
 				if (Input.GetKey ("s")) {
 					//move object in the backward direction thats its facing
 					GlobalVariables.currentPlayerTank.transform.position -= GlobalVariables.currentPlayerTank.transform.forward * GlobalVariables.moveSpeed * Time.deltaTime;
-					//playerCamera.transform.position = GlobalVariables.currentPlayerTank.transform.position + cameraOffset;
 					updateFuelConsumption ();
 				}
 
@@ -50,16 +44,16 @@ public class MovePlayer : MonoBehaviour {
 				//rotate camera left along y axis
 				GlobalVariables.currentPlayerTank.transform.RotateAround (GlobalVariables.currentPlayerTank.transform.position, Vector3.up, 2 * (-1) * GlobalVariables.moveSpeed * Time.deltaTime);//rotate around self
 			
-				//playerCamera.transform.RotateAround  (GlobalVariables.currentPlayerTank.transform.position, Vector3.up, 4 * (-1) * GlobalVariables.moveSpeed * Time.deltaTime);//rotate around self
-				//cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
+				playerCamera.transform.RotateAround (gameObject.transform.position, Vector3.up, (-1) * GlobalVariables.moveSpeed * Time.deltaTime);
+				cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
 			}
 
 			if (Input.GetKey ("d")) {
 				//move camera right along y axis
 				GlobalVariables.currentPlayerTank.transform.RotateAround (GlobalVariables.currentPlayerTank.transform.position, Vector3.up, 2 * GlobalVariables.moveSpeed * Time.deltaTime);//rotate around self
 			
-				//playerCamera.transform.RotateAround (GlobalVariables.currentPlayerTank.transform.position, Vector3.up, 4 * GlobalVariables.moveSpeed * Time.deltaTime);//rotate around self
-				//cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
+				playerCamera.transform.RotateAround (gameObject.transform.position, Vector3.up, GlobalVariables.moveSpeed * Time.deltaTime);
+				cameraOffset = playerCamera.transform.position - GlobalVariables.currentPlayerTank.transform.position;
 			}
 		}
 	}

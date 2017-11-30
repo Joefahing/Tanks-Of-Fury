@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class TriggerPlayerOne : MonoBehaviour {
 	public GameObject healthBarParent;
@@ -32,6 +34,7 @@ public class TriggerPlayerOne : MonoBehaviour {
 
 			if (GlobalVariables.playerOneCurrentHealth <= 0) {
 				Debug.Log ("Player 1: Died!");
+				SceneManager.LoadScene ("MainMenu");
 			} 
 		}
 

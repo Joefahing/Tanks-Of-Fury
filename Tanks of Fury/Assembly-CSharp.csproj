@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\GrowAOE.cs" />
      <Compile Include="Assets\Scripts\MovePlayer.cs" />
      <Compile Include="Assets\Scripts\PauseGame.cs" />
+     <Compile Include="Assets\Scripts\PlayerTwoAutomate.cs" />
      <Compile Include="Assets\Scripts\RotateCannon.cs" />
      <Compile Include="Assets\Scripts\RotateTurret.cs" />
      <Compile Include="Assets\Scripts\SceneChange.cs" />

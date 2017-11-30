@@ -42,6 +42,7 @@ public class SwitchTurns : MonoBehaviour {
 
 	public static void switchPlayersTurns() {
 		if (GlobalVariables.CurrentPlayerTurn == 1) {
+			GlobalVariables.fireAI = false;
 			//end player ones turn, start player twos turn
 			updateCurrentPlayer (GlobalVariables.playerTwoTank,GlobalVariables.playerTwoTurret,GlobalVariables.playerTwoCannon,GlobalVariables.playerTwoFuelLevel,false,true,2,GlobalVariables.playerTwoMaxTravelDistance,GlobalVariables.playerTwoSizeAOE);
 		}
