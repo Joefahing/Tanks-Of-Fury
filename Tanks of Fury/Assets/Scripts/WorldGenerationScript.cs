@@ -17,7 +17,7 @@ public class WorldGenerationScript : MonoBehaviour {
 	private GameObject[] powerUp;
 
 
-	public int stoneChances = 2 ;
+	public int stoneChances = 3 ;
 
 	[SerializeField]
 	private GameObject blMarker;

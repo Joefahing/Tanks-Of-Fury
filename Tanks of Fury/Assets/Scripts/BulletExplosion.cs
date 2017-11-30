@@ -18,17 +18,4 @@ public class BulletExplosion : MonoBehaviour {
 
 
 	}
-
-	void OnTriggerEnter(Collider collider) {
-
-
-		if (collider.tag == "Terrain") {
-			
-			Destroy (collider.gameObject);
-
-		}
-		Destroy (gameObject);
-		SwitchTurns.switchPlayersTurns();
-	}
-		
 }
